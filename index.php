@@ -1,5 +1,8 @@
 
-
+<?php 
+$data = file_get_contents("https://dummyjson.com/recipes/1");
+$Data = json_decode($data, true);
+?>
 
 <!DOCTYPE html>
 <html>
@@ -28,7 +31,7 @@
      <div class="block">
        <div class="recipeblocks">
          <div class="mealtest">
-
+            
          </div>
        </div>
      </div>
