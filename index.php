@@ -1,6 +1,6 @@
 
 <?php 
-$data = file_get_contents("https://dummyjson.com/recipes/1");
+$data = file_get_contents("https://dummyjson.com/recipes");
 $Data = json_decode($data, true);
 ?>
 
