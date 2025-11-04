@@ -16,16 +16,23 @@ $Data = json_decode($data, true);
 
 <body>
   <script src="script.js"></script>
-
+  
+  </form>
    <div class="main">
      <div class="header">
-       <div class="header-buttons">
+       <div class="header-top">
          <div class="logo">logo</div>
-         <div class="buttons">
-           <div class="home">about us</div>
-          
-
-
+         <div class="search">
+           <input type="text" placeholder="Search..">
+           <button type="submit"><i class="fa fa-search"><img src="images/search.png" alt="search image" height="20" width="20"></i></button>
+         </div>
+         <div class="favorites"><i class="fa fa-favorite"><img src="images/star.png" alt="search image" height="20" width="20"></i>favorites</div>
+         <div class="profile"><i class="fa fa-profile"><img src="images/signin.png" alt="search image" height="30" width="30"></i></div>
+       </div>
+       <div class="header-bottom">
+         <div class="recipes">recipes</div>
+         <div class="tags">tags</div>
+         <div class="difficulty">difficulty</div>
        </div>
      </div>
      <div class="block">
@@ -36,10 +43,16 @@ $Data = json_decode($data, true);
        </div>
      </div>
    </div>
+   </div>
+     <!-- Sign up design -->
+     <form>
+       <div class="signup_container"> 
+         <div class="test"> </div>
+       </div>
+     </form>
 
 
-
-  </div>
+  
 </body>
 
 </html>

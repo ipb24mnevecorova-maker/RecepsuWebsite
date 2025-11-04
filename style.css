@@ -13,25 +13,74 @@
   top: 0;
   padding: 20px;
   height: 80px;
-  align-content: center;
+  background-color: #A2AADB;
+  display: grid;
+  grid-template-rows: auto auto;
 }
-
+.header-top{
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 30% auto 10% 5%;
+  
+}
 .logo{
-  display: flex;
-  flex-direction: row;
-  align-content: center;
-
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+.search{
+  grid-column-start: 2;
+  grid-column-end: 3;
+  width: 283px;
 }
 
-.header-buttons{
- display: grid;
-  grid-template-columns: auto auto;
 
-
+.search input[type=text] {
+  padding: 7px;
+  border: none;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  font-size: 17px;
+  
+}
+.search  button {
+  float: right;
+  padding: 5px 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
 }
 
-.buttons{
+
+
+.header-bottom{
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+}
+
+
+
+.signin{
+  display: flex;
+  justify-content: center;
+}
+.signup_container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  
+}
+.test{
+  
+  background-color: blue;
+  opacity: 0;
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  z-index: 1;
 }
